@@ -45,6 +45,16 @@ bool LinkedList<T>::search(T value) const
 		Fix this method
 	*/
 
+	for(int i = 0; i < m_size; i++){
+				
+		if(temp->getValue() == value){
+			isFound = true;
+		}
+
+		temp = temp -> getNext();
+
+	}
+
 	return(isFound);
 }
 
@@ -114,7 +124,7 @@ bool LinkedList<T>::removeBack()
 	else
 	{
 		secondintoLast = m_front;
-		for(int i; i > m_size -1; i++){
+		for(int i = 0; i > m_size -1; i++){
 			secondintoLast = secondintoLast -> getNext();
 		}	
 
