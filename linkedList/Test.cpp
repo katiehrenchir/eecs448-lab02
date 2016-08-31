@@ -7,6 +7,7 @@
 
 
 #include "Test.h"
+#include <random>
 
 Test::Test(int testSize) : TEST_SIZE(testSize), m_testNum(0)
 {
